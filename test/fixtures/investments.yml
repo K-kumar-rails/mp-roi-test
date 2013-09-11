@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sq_feet: 1.5
+  cost: 1.5
+  sale_val: 1.5
+
+two:
+  sq_feet: 1.5
+  cost: 1.5
+  sale_val: 1.5

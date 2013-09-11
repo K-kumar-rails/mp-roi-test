@@ -1,0 +1,4 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'form' %>
+<p> Return on investment is: <b><%= @investment.amount %>%</b> with a <%= @investment.amount > 0 ? "profit" : "loss" %> of <b><%= @investment.profit %></b> per square feet.
