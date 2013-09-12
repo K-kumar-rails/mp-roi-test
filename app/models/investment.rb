@@ -5,16 +5,9 @@ class Investment < ActiveRecord::Base
     sale_val = self.sale_val
     sq_feet = self.sq_feet
     cost = self.cost
-    roi = (sale_val-cost)/cost
-    return roi.round(2)
-  end
-
-  def calculate_sf
-    sale_val = self.sale_val
-    sq_feet = self.sq_feet
-    cost = self.cost
+    roi = ((sale_val-cost)/cost)*100
     sf = (sale_val-cost)/sq_feet
-    return sf.round(2)
+    return roi.round(2), sf.round(2) 
   end
 
 end
